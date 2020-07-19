@@ -14,3 +14,6 @@ print(f"Ther will be {cars_not_driven} empty cars today")
 print(f"We can transport {carpool_capacity} people today.")
 print(f"we have {passengers} to carpool today.")
 print(f"We heed to put about {average_passengers_per_car} in each car")
+print("That will be all Glenn will do in this chapter today")
+#this will be all for now
+#delete the comments afterwards
