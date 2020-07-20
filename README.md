@@ -17,3 +17,5 @@ Read me is intresting.
 Glenn has learned another way of doing the same thing you would do in print with %S.
 
 Glenn is starting to practice again
+
+Glenn stopped studying programming only for  a while
