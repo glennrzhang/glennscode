@@ -9,4 +9,30 @@ def gold_room():
     else:
         dead("Man,learn to type a number.")
     
-    if how much 
+    if how_much < 50:
+        print("Nice,you're not greedy,you win!")
+        exit(0)
+    else:
+        dead("You, greedy bastard!")
+
+
+def bear_room():
+    print("There is a bear here.")
+    print("The bear has a lot of honey.")
+    print("The fat bear is in front of another door")
+    print("How are you gonna move the bear?")
+    bear_moved=False
+    
+    while True:
+        choice = input("> ")
+
+        if choice == "take honey":
+            dead("The bear looks at you and then slaps your head off.")
+        elif choice == "taunt bear" and bear_moved:
+            dead("The bear gets pissed off and chews you leg off")
+        elif choice == "open door" and bear_moved:
+            gold_room()
+        else:
+            print("I have no idea what that means")
+
+
