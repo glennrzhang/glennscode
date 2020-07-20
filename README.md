@@ -19,3 +19,5 @@ Glenn has learned another way of doing the same thing you would do in print with
 Glenn is starting to practice again
 
 Glenn stopped studying programming only for  a while
+
+Glenn started again.
