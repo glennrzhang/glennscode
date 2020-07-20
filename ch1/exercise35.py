@@ -36,3 +36,42 @@ def bear_room():
             print("I have no idea what that means")
 
 
+def cthulhu_room():
+    print("Here you see the great evil cthulhu")
+    print("He, it, whatever stare at you and you go craxy.")
+    print("Do you flee for your life or eat your head?")
+
+    choice = input("> ")
+
+    if "flee" in choice:
+        start()
+    elif "head" in choice:
+        dead("We'll that was tasty")
+    else:
+        cthulhu_room()
+
+
+def dead(why):
+    print(why,"Good Job!")
+    exit(0)
+
+def start():
+    print("You are in a dark room.")
+    print("There is a door to your right and left.")
+    print("Which one do you take?")
+
+    choice = input("> ")
+
+    if choice == "left":
+        bear_room()
+    elif choice == "right":
+        cthulhu_room()
+    else:
+        dead("You stumble around and starve to death")
+
+
+
+
+
+
+start()
