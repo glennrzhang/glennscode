@@ -15,3 +15,5 @@ Lets not forget to commit it then push it to the remote source>
 Read me is intresting.
 
 Glenn has learned another way of doing the same thing you would do in print with %S.
+
+Glenn is starting to practice again
