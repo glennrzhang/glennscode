@@ -21,3 +21,7 @@ Glenn is starting to practice again
 Glenn stopped studying programming only for  a while
 
 Glenn started again.
+
+Glenn logged on again
+
+Glenn started
