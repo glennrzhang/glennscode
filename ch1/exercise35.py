@@ -49,12 +49,11 @@ def cthulhu_room():
         start()
     elif "head" in choice:
         dead("We'll that was tasty")
-    elif:"inside" in choice:
+    elif "inside" in choice:
         gold_room()
     else:
-        cthulhu_room()ssssss
-
-
+        cthulhu_room()
+        
 def dead(why):
     print(why,"Good Job!")
     exit(0)
