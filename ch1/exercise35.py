@@ -40,6 +40,8 @@ def cthulhu_room():
     print("Here you see the great evil cthulhu")
     print("He, it, whatever stare at you and you go craxy.")
     print("Do you flee for your life or eat your head?")
+    print("while you are thinking about your options you see another room! ")
+    print("Do you go inside?")
 
     choice = input("> ")
 
@@ -47,8 +49,10 @@ def cthulhu_room():
         start()
     elif "head" in choice:
         dead("We'll that was tasty")
+    elif:"inside" in choice:
+        gold_room()
     else:
-        cthulhu_room()
+        cthulhu_room()ssssss
 
 
 def dead(why):
