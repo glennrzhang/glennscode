@@ -1,5 +1,5 @@
 from sys import exit
-from random inport randit
+from random import randit
 from textwrap import dedent
     class Scene(object):
         print("This is a not yet configured scene.")
@@ -42,7 +42,7 @@ from textwrap import dedent
         def enter(self):
             print[
                 '''
-                The Gothons of Planet Percal #25 have invaded your ship and destroyed your entire crew. 
+                The Gothons of Planet dumbbutt ho me sassy #25 have invaded your ship and destroyed your entire crew. 
                 You are the last surviving member and your last mission is to get the neutron destruct bomb form the Weapons Armory,
                 put it in the bridge,and blow the ship up after getting into an escape pod.
 
