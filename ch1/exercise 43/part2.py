@@ -136,3 +136,55 @@ from textwrap import dedent
                 print(dedent('''
                 You slowly place the bomb down knowing that if they make any move it could be the end of them so you succsesfully get out into a escape pode withe the bomb placed down.
                 '''))
+                return 'escape_pod'
+    
+
+    class EscapePod(Scene):
+
+        def enter(self):
+            print(dedent("""
+            You rush through knowing that there maybe only one pod that is still in tip top conditioning,so you only have one choice from the 5 pods.
+            """))
+
+            good_pod = randit(1,5)
+            guess = input("[pod#]>")
+
+            if int(guess) != good_pod:
+                print(dedent("""
+                you jump into pod {guess} and hit the eject button to escape .
+                Your pod escapes and implodes killing you.
+                """))
+                return'death'
+            else:
+                print(dedent('''
+                You jump into pod {guess} and you press the eject button and you escape in the nick of time and you see your ship implode.
+                Congrats!You win!
+                '''))
+                return 'finished'
+
+    class Finished(Scene):
+
+        def enter(self):
+            print("You won boy,good job!")
+            return 'finished'
+
+    class Map(object):
+
+        scenes = {
+            'central_corridor': CentralCorridor(),
+            'laser_weapon_armory': LaserWeaponArmory(),
+            'the_bridge': TheBridge(),
+            'escape_pod': EscapePod(),
+            'death': Death()
+            'finished':Finished()
+        }
+
+        def _init_(self, start_scene):
+            self.start_scene = start_scene
+
+        def next_scene(self, start_scene):
+            val = Map.scenes.get(scene_name)
+            return val
+
+        def opening_scene(self):
+            return self.next_scene(self.start-scene)
