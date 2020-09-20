@@ -115,3 +115,24 @@ from textwrap import dedent
             You decide to sit there as your ship was destroyed."""))
             return 'death'
         
+
+
+    class TheBridge(Scene):
+        def enter(self):
+            print(dedent("""
+            You see five gothons on the bridge not attacking you afraid of dying due to the bomb under your arm.
+            You have a two choices,wether to throw the bomb or to slowly place the bomb.
+            """))
+        
+            action = input(">")
+
+            if action =="throw the bomb":
+                print(dedent("""
+                You throw the bomb as hard as you can and run away, but unfourtuanlty one of them kills you as it panics and shoots.
+                You know you have failed even before the blast hits you.
+                """))
+                return 'death'
+            elif action =="slowly place the bomb":
+                print(dedent('''
+                You slowly place the bomb down knowing that if they make any move it could be the end of them so you succsesfully get out into a escape pode withe the bomb placed down.
+                '''))
