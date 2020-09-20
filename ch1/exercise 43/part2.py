@@ -3,14 +3,16 @@ from random import randint
 from textwrap import dedent
     
 class Scene(object):
-    print("This is a not yet configured scene.")
-    print("Subclass it and implent enter().")
-    exit(1)
+
+    def enter(self):
+        print("This is a not yet configured scene.")
+        print("Subclass it and implent enter().")
+        exit(1)
 
 
 class Engine(object):
 
-    def _init_(self, scene_map):
+    def __init__(self, scene_map):
         self.scene_map = scene_map
 
     def play(self):
@@ -19,7 +21,7 @@ class Engine(object):
 
         while current_scene != last_scene:
             next_scene_name = current_scene.enter()
-            current_scene = self.scene_map.next_map(next_scene_name)
+            current_scene = self.scene_map.next_scene(next_scene_name)
         
         #reminder:print last scene
         current_scene.enter()
@@ -102,7 +104,7 @@ class LaserWeaponArmory (Scene):
 
         while guess !=code and guesses < 10:
             print("bzz")
-            guess += 1
+            guesses += 1
             guess = input("[keypad]>")
 
         
@@ -181,7 +183,7 @@ class Map(object):
         'finished':Finished(),
     }
 
-    def _init_(self, start_scene):
+    def __init__(self, start_scene):
         self.start_scene = start_scene
 
     def next_scene(self, scene_name):
@@ -194,6 +196,6 @@ class Map(object):
 
 
 
-    a_map = Map('central_corridor')
-    a_game = Engine(a_map)
-    a_game.play()
+a_map = Map('central_corridor')
+a_game = Engine(a_map)
+a_game.play()
