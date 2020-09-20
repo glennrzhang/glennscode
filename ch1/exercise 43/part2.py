@@ -66,17 +66,19 @@ from textwrap import dedent
                 return 'death'
 
             elif action == 'dodge!':
-                print("""
+                print(dedent("""
                 Like a world class boxer you dodge ,weave, slip and slide right as the Gothon's blaster cranks a laser past your head.
                 But in the process you get knocked cold as your head collides with a pillar.
                 You only recover in time to see him use his blaster to kill you.
-                """)
+                """))
 
                 return 'death'
             
             elif action =='tell a joke!':
-                print("""
+                print(dedent("""
                 Luckily for you you heard a gothon tell another gothon a joke that made the gothon laugh so much
                 that he could not move.As he could not move you pull out your wand and shout out"Sectunsempera" so it died with big gashes on its face.
-                """)
+                """))
+                
+                return 'laser_weapon_armory'
                 
