@@ -81,4 +81,16 @@ from textwrap import dedent
                 """))
                 
                 return 'laser_weapon_armory'
-                
+
+            else:
+                print("Does not compute  you mutton brain,type in one of the options.")
+                return'central corridor'
+    class LaserWeaponArmory (Scene):
+
+        def enter(self):
+            print(dedent("""
+            You roll into the laser weapon armory and find the neutron bomb in a container next to you. 
+            There is a keypad lock on the box and code the wrong ten times and it will be locked forever or until someone breaks the container.
+            The code is three digits.
+            """))
+        
