@@ -94,3 +94,24 @@ from textwrap import dedent
             The code is three digits.
             """))
         
+        code = f"{randint(1,9)}{randit(1,9)}{randit(1,9)}"
+        guess = input("[keypad]>")
+        guesses = 0
+
+        while guess !=code and guesses < 10:
+            print("bzz")
+            guess += 1
+            guess = input("[keypad]>")
+
+        
+        if guess == code:
+            print(dedent("""
+            The container opens in a pop and you grab the neutron bomb and run as fast as you can to the bridge where that you have to place it in.
+            P.S. You also have to put it into the right spot.
+            """))
+            return 'the bridge'
+        else:
+            print(dedent("""YOu hear one last buzz as teh lock makes the bomb and things locked forever and useless.
+            You decide to sit there as your ship was destroyed."""))
+            return 'death'
+        
