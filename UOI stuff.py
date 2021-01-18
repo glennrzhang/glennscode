@@ -37,75 +37,75 @@ def question_1():
 
 
 def question_2():  
-    print("         ")
+    print("Question 2: Where nuclear bombs used in world war 1?")
     A_2 = input("> ")
-    if A_2 == "         ":
-        print("     ")
+    if A_2 == "No" or "No they werent used in WW1":
+        print("Congrats, you got it right.")
         streak += 1
         score += 100+streak*10
-        print("         ")
+        print(f"yer score is {score}")
         #where it tells you where how much score you have
-        print("         ")
+        print(f"Your on a streak. Your current streak is {streak}")
         #this is were it tells you your streak
         question_3()
     else:
-        print("         ")
+        print("LMAO, it was invented in WW2, so it could not be used in WW1")
         #stuff that says like whoops you didnt get the question correct and try better in q 3
         question_3()
         streak = streak-streak
         
 def question_3():  
-    print("         ")
+    print("Question 3.Now that you know that nucs were used in WW2, what type of nuclear bomb was used in it?")
     A_3 = input("> ")
-    if A_3 == "         ":
-        print("     ")
+    if A_3  == " The Atomic Bomb.":
+        print("You got it right the Atomic Bomb made by Albert Einstein, you einstein.")
         streak += 1
         score += 100+streak*10
-        print("         ")
+        print(f"Your score is {score}")
         #where it tells you where how much score you have
-        print("         ")
+        print(f"Your on a streak. Your current streak is {streak}")
         #this is were it tells you your streak
         question_4()
     else:
-        print("         ")
+        print("The anwser was the Atomic Bomb.")
         #stuff that says like whoops you didnt get the question correct and try better in q 4
         question_4()
         streak = streak-streak
 
 
 def question_4():  
-    print("         ")
+    print("Question 4.What does NAZI mean?")
     A_4 = input("> ")
-    if A_4 == "         ":
-        print("     ")
+    if A_4 == "A member of the National Social Group":
+        print("You got it right man.")
         streak += 1
         score += 100+streak*10
-        print("         ")
+        print(f"Your score is {score}"))
         #where it tells you where how much score you have
-        print("         ")
+        print(f"Your on a streak. Your current streak is {streak}")
         #this is were it tells you your streak
         question_5()
     else:
-        print("         ")
+        print("The anwser was A member of the National Socialist Group")
         #stuff that says like whoops you didnt get the question correct and try better in q 5
         question_5()
         streak = streak-streak
 
 
 def question_5():  
-    print("         ")
+    print("When did the bombing of pearl habor happen(answer with yyyy/mm/dd)")
     A_5 = input("> ")
-    if A_5 == "         ":
-        print("     ")
+    if A_5 == "1914/12/07":
+        print("You got it right man, are you a libarian?")
         streak += 1
         score += 100+streak*10
-        print("         ")
+        print(f"Your score is {score}")
         #where it tells you where how much score you have
-        print("         ")
+        print(f"Your on a streak. Your current streak is {streak}")
         #this is were it tells you your streak
         ending()
     else:
-        print("         ")
+        print("Better try again later.It was 1914/12/07")
         #stuff that says like whoops you didnt get the question correct 
         ending()
         streak =streak-streak
@@ -113,3 +113,5 @@ def question_5():
 
 def ending():
     print("Your final score is %s and your current streak is %s"%(score,streak))
+
+start()
