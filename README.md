@@ -25,3 +25,7 @@ Glenn started again.
 Glenn logged on again
 
 Glenn started
+
+Glenn started
+
+Glenn is starting to go programming
