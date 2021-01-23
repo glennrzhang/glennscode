@@ -14,7 +14,7 @@ def start():
 
 
 def question_1(score,streak):
-    print("Question !: In which world war did the nuclear bomb be invented?")
+    print("Question 1: In which world war did the nuclear bomb be invented?")
     
     A_1 = input("> ")
     A_1
@@ -60,7 +60,7 @@ def question_2(score,streak):
 def question_3(score,streak):  
     print("Question 3.Now that you know that nucs were used in WW2, what type of nuclear bomb was used in it?")
     A_3 = input("> ")
-    if A_3  == " The Atomic Bomb.":
+    if A_3  == "The Atomic Bomb":
         print("You got it right the Atomic Bomb made by Albert Einstein, you einstein.")
         streak += 1
         score += 100+streak*10
