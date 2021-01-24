@@ -59,7 +59,7 @@ def question_2(score,streak):
         
 def question_3(score,streak):  
     print("Question 3.Now that you know that nucs were used in WW2, what type of nuclear bomb was used in it?")
-    A_3 = input("choose(Hydrogen Bomb/Atomic)> ")
+    A_3 = input("choose(Hydrogen Bomb/Atomic Bomb)> ")
     if A_3  in ["Atomic Bomb"]:
         print("You got it right the Atomic Bomb made by Albert Einstein, you einstein.")
         streak += 1
@@ -80,7 +80,7 @@ def question_3(score,streak):
 def question_4(score,streak):  
     print("Question 4.What does NAZI mean?")
     A_4 = input("> ")
-    if A_4 in["National Socialist Party"]:
+    if A_4 in["National Socialist Party","National Socialist Group"]:
         print("You got it right man.")
         streak += 1
         score += 100+streak*10
