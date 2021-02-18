@@ -90,6 +90,9 @@ def question_4(score,streak):
         #this is were it tells you your streak
         question_5(score,streak)
     else:
+
+
+        
         print("The anwser was National Socialist Party")
         #stuff that says like whoops you didnt get the question correct and try better in q 5
         streak = streak-streak
