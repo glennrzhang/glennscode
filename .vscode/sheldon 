@@ -1,13 +1,4 @@
-import
-imported document = []
-def dictionary(word,word_def):
-    from imported dictionary     ;
-    def(word)
-# Make something that uses a dictionary to define meanings
-# Make something to upload stuff
-# MAke a 
-def info(length, words):
-    for word in words:
-        find_meaning(word)
-        if meaning = wanted_def
-        upload_info(info)
+def triangle_text_creator(text_length):
+    for number in text_lenght:
+        print(1*textlenght-1*2)
+    return
