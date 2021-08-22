@@ -1,26 +1,11 @@
-random_list = range(100)
-
+used_number_list = []
 def number_of_one_hundred_doubles(input_list):
-   
-   
-   
-   
-   
-    for number in input_list:
-       
-       
-       
-       
-       
-        if list_contains_number(input_list, 100-number):
-            print("1,2" % (number, 100-number))
-
-# return True is the input_list contains "number", otherwise False.
-        if random_list=100-number 
-             
-
-
-             return number,100-number
-                
+    list_length = len(input_list)
+    idx =0 
+    while idx < list_length:
+        current_number = input_list[idx]
+        idx += 1
+        if 100 - current_number in input_list[idx:]:
+            print(" "+str(current_number)+","+str(100-current_number)) 
+random_list = [50,20,70,30,80,10,10]
 number_of_one_hundred_doubles(random_list)
-

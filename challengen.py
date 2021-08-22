@@ -4,6 +4,7 @@ def str_multiplication(c,n):
     return c*n
  
 def draw_a_triangle(choice):
+
     num_1 = 1
     num_2 = 1
 
@@ -18,6 +19,19 @@ def draw_a_triangle(choice):
         num_2 += 1
         num_3 = int(choice)-num_2
 
+def draw_any_triangle_that_you_can_imagine(choice,triangle_type,extra_space=0):
+
+    if triangle_type == 0:
+        for row in range(choice):
+            print(" "*(choice-row-1+extra_space) + "*"*(row*2+1))
+    if triangle_type == 1:
+        for row in range(choice-1,-1,-1):
+            print(" "*(choice-row-1+extra_space) + "*"*(row*2+1))
+    
+
+def diamond_printer(choice):
+    draw_any_triangle_that_you_can_imagine(choice,0)
+    draw_any_triangle_that_you_can_imagine(choice-1,1,1)
 
                         
 def draw_a_christmas_tree(leaf_size,trunk_x,trunk_y):
@@ -31,7 +45,4 @@ def draw_a_christmas_tree(leaf_size,trunk_x,trunk_y):
         print(string_n_2_0)
         num_5 += 1
 
-draw_a_christmas_tree(10,9,6)
-draw_a_christmas_tree(10,1,6)
-draw_a_christmas_tree(2,1,6)
-draw_a_christmas_tree(6,3,6)
+diamond_printer(10)
