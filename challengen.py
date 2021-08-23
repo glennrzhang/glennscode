@@ -76,8 +76,7 @@ def x_printer(x_size,x_width):
     while overlapped_parts <= x_width:
         print(" "*x_space_on_the_sides+"*"*(x_width*2-overlapped_parts))
         overlapped_parts+=2
-        if overlapped_parts <= x_width:
-            x_space_on_the_sides+=1 
+        x_space_on_the_sides+=1 
     
     x_space_on_the_sides += -1
     overlapped_parts=x_width*2-(total_width-x_space_on_the_sides*2)
@@ -98,4 +97,4 @@ def x_printer(x_size,x_width):
 
 
 
-x_printer(4,3)
+x_printer(10,3)
