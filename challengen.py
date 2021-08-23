@@ -61,11 +61,41 @@ def parallelogram_type_2_printer(parallelogram_x,parallelogram_y):
         space_counter +=1
 
 
+def x_printer(x_size,x_width):
+    total_width = x_size-1+x_width
+    x_middle_space = total_width-x_width*2
+    x_space_on_the_sides = 0
+    
+
+    while x_middle_space > 0:
+        print(" "*x_space_on_the_sides+"*"*x_width+" "*x_middle_space+"*"*x_width)
+        x_space_on_the_sides += 1
+        x_middle_space = total_width-x_space_on_the_sides*2-x_width*2
+        
+    overlapped_parts=x_width*2-(total_width-x_space_on_the_sides*2)
+    while overlapped_parts <= x_width:
+        print(" "*x_space_on_the_sides+"*"*(x_width*2-overlapped_parts))
+        overlapped_parts+=2
+        if overlapped_parts <= x_width:
+            x_space_on_the_sides+=1 
+    
+    x_space_on_the_sides += -1
+    overlapped_parts=x_width*2-(total_width-x_space_on_the_sides*2)
+    while overlapped_parts >= 0:
+      print(" "*x_space_on_the_sides+"*"*(x_width*2-overlapped_parts))
+      overlapped_parts+= -2
+      x_space_on_the_sides += -1
+    
+
+    x_middle_space = total_width-x_space_on_the_sides*2-x_width*2
+    while x_middle_space <= total_width-x_width*2:
+       print(" "*x_space_on_the_sides+"*"*x_width+" "*x_middle_space+"*"*x_width)
+       x_space_on_the_sides += -1
+       x_middle_space = total_width-x_space_on_the_sides*2-x_width*2
+
+    
+    
 
 
 
-
-diamond_printer(10)
-
-parallelogram_type_1_printer(10,20)
-parallelogram_type_2_printer(10,20)
+x_printer(4,3)
