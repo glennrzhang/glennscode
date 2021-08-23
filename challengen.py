@@ -45,15 +45,27 @@ def draw_a_christmas_tree(leaf_size,trunk_x,trunk_y):
         print(string_n_2_0)
         num_5 += 1
 
-def parallelogram_printer(parallelogram_x,parallelogram_y):
+def parallelogram_type_1_printer(parallelogram_x,parallelogram_y):
     space_counter = parallelogram_y-1
     reapeted_times = 0
     while reapeted_times < parallelogram_y:
         print(" "*space_counter + "*"*parallelogram_x)
         reapeted_times += 1
         space_counter += -1
+def parallelogram_type_2_printer(parallelogram_x,parallelogram_y):
+    space_counter = 0
+    repeated_times = 0
+    while repeated_times < parallelogram_y:
+        print(" "*space_counter + "*"*parallelogram_x)
+        repeated_times += 1
+        space_counter +=1
+
+
+
+
 
 
 diamond_printer(10)
 
-parallelogram_printer(10,20)
+parallelogram_type_1_printer(10,20)
+parallelogram_type_2_printer(10,20)
