@@ -93,8 +93,20 @@ def x_printer(x_size,x_width):
        x_middle_space = total_width-x_space_on_the_sides*2-x_width*2
 
     
-    
+def x_printer_liping(height, cross_width):
+    total_width = cross_width + height - 1
+    print(total_width)
+    for row in range(height):
+        left_begin = row
+        right_begin = total_width - row  - cross_width     
+        row_content = [' '] * total_width
+        for idx in range(left_begin, left_begin + cross_width):
+            row_content[idx] = '*'  
+        for idx in range(right_begin, right_begin + cross_width):
+            row_content[idx] = '*'  
+
+        print(''.join(row_content))
 
 
-
-x_printer(10,3)
+x_printer(6,2)
+x_printer_liping(8,3)

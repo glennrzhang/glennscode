@@ -2,3 +2,4 @@ def square_creator2000(x,y):
     for row in range(y):
         print(" "*(y-row),"*"*x)
 square_creator2000(5,100)
+
