@@ -107,6 +107,3 @@ def x_printer_liping(height, cross_width):
 
         print(''.join(row_content))
 
-
-x_printer(6,2)
-x_printer_liping(8,3)
